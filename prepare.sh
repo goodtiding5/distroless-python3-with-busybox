@@ -9,5 +9,5 @@ cd bin
 curl -O https://busybox.net/downloads/binaries/"$BUSYBOX_REL-$BUSYBOX_PLT"/busybox
 if [ -f busybox ]; then
     chmod 0555 busybox;
-    for f in $(./busybox --list); do ln -f busybox $f; done
+    ln -f busybox sh
 fi
